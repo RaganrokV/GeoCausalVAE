@@ -5,6 +5,7 @@ GeoCausalVAE is a generative–causal modeling framework designed to analyze how
 ## Framework Overview
 
 
+
 GeoCausalVAE combines three key components:
 
 - **Spatial econometrics** to capture spatial spillover effects between urban areas  
@@ -18,4 +19,4 @@ The current implementation mainly serves as a **research prototype accompanying 
 
 We appreciate your understanding, and improvements are always welcome.
 
-If you encounter any issues or have suggestions, please feel free to **open an issue or contact me directly**.
+If you encounter any issues or have suggestions, please feel free to **open an issue**.
