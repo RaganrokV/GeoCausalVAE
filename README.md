@@ -1,10 +1,10 @@
-# GeoCausalVAE: Generative AI as a Policy Laboratory for Urban Transport Energy
+# Spatially aware generative AI for urban transport scenario exploration
 
-GeoCausalVAE is a generative–causal modeling framework designed to analyze how **urban morphology influences the energy use of electric vehicles (EVs)**. The project integrates **spatial econometrics, causal inference, and deep generative learning** to enable counterfactual analysis of urban transport systems.
+GeoCausalVAE integrates **causal representation learning, empirical structural priors, and spatial regularization** within a variational autoencoder to explore how hypothetical changes in urban form relate to electric-vehicle energy use. It connects generative modeling with spatial analysis to support interpretable, geographically explicit counterfactual scenario exploration.
 
 ## Framework Overview
 
-
+<img width="631" height="270" alt="image" src="https://github.com/user-attachments/assets/344ff933-ab32-47c2-abd6-cbd27a08819d" />
 
 GeoCausalVAE combines three key components:
 
@@ -12,11 +12,17 @@ GeoCausalVAE combines three key components:
 - **Causal inference** to model structural relationships between urban variables and energy use  
 - **Generative modeling** to enable counterfactual scenario generation under hypothetical interventions
 
+## Study at a glance
 
-## Notes
+The Shanghai case study combines **more than 30 million GPS records from 1,000 electric vehicles** (encompassing sedans, buses, and logistics vehicles) with urban morphology and energy-consumption measurements.  
+<img width="607" height="416" alt="image" src="https://github.com/user-attachments/assets/7e40d735-4b97-46a4-80a6-fd2fc7be4796" />
 
-The current implementation mainly serves as a **research prototype accompanying our study**. Some parts of the codebase were developed during the research process and have not yet been fully cleaned or optimized for general use. As a result, there may be redundant components or configurations that are not perfectly adapted to different environments.
+## From observations to scenarios
+Analysis is conducted at the jiedao level—an administrative subdistrict containing multiple streets and communities.
+<img width="652" height="581" alt="image" src="https://github.com/user-attachments/assets/aefcdd97-93aa-4d26-af73-bbb16bd15da6" />
 
-We appreciate your understanding, and improvements are always welcome.
+1. **Characterize urban context:** Aggregate fleet observations and urban morphology at the subdistrict level; examine spatial dependence and local clusters.
+2. **Learn structured representations:** Combine generative reconstruction with empirical structural guidance and spatial regularization.
+3. **Explore hypothetical changes:** Compare simulated energy-use responses across urban-form scenarios, locations, and vehicle categories.
 
-If you encounter any issues or have suggestions, please feel free to **open an issue**.
+
