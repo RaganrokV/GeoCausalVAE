@@ -8,7 +8,7 @@ os.environ['USE_PYGEOS'] = '0'
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 # ====================== 核心因果推断组件 ======================
 class DagLayer(nn.Module):
-    """有向无环图层，A[source, target]，按 Eq. (3) 求解结构方程"""
+    """有向无环图层，A[source, target]"""
     def __init__(self, in_features, out_features, bias=False, initial=True, prior_dag=None):
         super().__init__()
         if in_features != out_features or bias:
